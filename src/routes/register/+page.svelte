@@ -24,8 +24,8 @@
   <button on:click={handleRegister}>Login</button>
 
   <div style="display:flex;flex-direction:row;align-items:center;gap:6px;">
-    <p>Don't have an account?</p>
-    <button on:click={handleNavigate}>Register</button>
+    <p>Already have an account?</p>
+    <button on:click={handleNavigate}>Login</button>
   </div>
 </div>
 
