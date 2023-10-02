@@ -1,5 +1,8 @@
 <script lang="ts">
-  let email: string = "";
+  import { userWritable } from "$lib/store.js";
+  import { goto } from "$app/navigation";
+
+  let email = "";
   let password = "";
 
   const handleNavigate = () => {
@@ -7,7 +10,14 @@
   };
 
   const handleLogin = () => {
-    // Login user from localstorage using svelte store
+    const payload = {
+      name: "Domenic Muentes",
+      email,
+      password,
+    };
+
+    userWritable.set(payload);
+    goto("/");
   };
 </script>
 
