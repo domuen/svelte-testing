@@ -21,12 +21,12 @@
   <input type="email" placeholder="Email" bind:value={email} />
   <input type="password" placeholder="Password" bind:value={password} />
 
+  <button on:click={handleRegister}>Login</button>
+
   <div style="display:flex;flex-direction:row;align-items:center;gap:6px;">
     <p>Don't have an account?</p>
     <button on:click={handleNavigate}>Register</button>
   </div>
-
-  <button on:click={handleRegister}>Login</button>
 </div>
 
 <style>
