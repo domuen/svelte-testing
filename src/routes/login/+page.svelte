@@ -2,6 +2,7 @@
   import { userWritable } from "$lib/store.js";
   import { goto } from "$app/navigation";
 
+  let name = "";
   let email = "";
   let password = "";
 
@@ -11,7 +12,7 @@
 
   const handleLogin = () => {
     const payload = {
-      name: "Domenic Muentes",
+      name,
       email,
       password,
     };
@@ -26,6 +27,7 @@
 
   <p>Please login to continue</p>
 
+  <input type="text" placeholder="Name" bind:value={name} />
   <input type="email" placeholder="Email" bind:value={email} />
   <input type="password" placeholder="Password" bind:value={password} />
 
