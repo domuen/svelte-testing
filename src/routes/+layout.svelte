@@ -9,6 +9,3 @@
 <div class="p-8">
   <slot />
 </div>
-
-<style>
-</style>

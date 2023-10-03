@@ -16,7 +16,7 @@
   };
 </script>
 
-<div class="container">
+<div class="flex flex-col items-center justify-center">
   <h1>Homepage</h1>
 
   {#if !Boolean(user?.name)}
@@ -39,12 +39,3 @@
     <button on:click={handleLogout}>Logout</button>
   {/if}
 </div>
-
-<style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-</style>
