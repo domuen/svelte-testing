@@ -26,29 +26,14 @@
 </script>
 
 {#each items as item}
-  <div class="item-container" on:click={() => handleViewItem(item.id)}>
+  <div
+    class="flex flex-col items-center justify-center max-w-lg rounded border cursor-pointer p-6 m-6 gap-6 hover:scale-105 select-none duration-100"
+    role="button"
+    tabindex="0"
+    on:keypress={() => {}}
+    on:click={() => handleViewItem(item.id)}
+  >
     <h3>{item.name}</h3>
     <p>{item.description}</p>
   </div>
 {/each}
-
-<style>
-  .item-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    cursor: pointer;
-    user-select: none;
-    transition-duration: 100ms;
-    max-width: 500px;
-    padding: 6px;
-    margin: 24px;
-    gap: 6px;
-  }
-
-  .item-container:hover {
-    scale: 1.025;
-  }
-</style>

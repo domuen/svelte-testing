@@ -13,7 +13,7 @@
   });
 </script>
 
-<div class="container">
+<div class="flex flex-col items-center justify-center gap-6">
   {#if loading}
     <h1>Loading...</h1>
   {:else if !item}
@@ -26,12 +26,3 @@
     <p>{item?.description}</p>
   {/if}
 </div>
-
-<style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-</style>
