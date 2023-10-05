@@ -9,7 +9,7 @@
 </script>
 
 <button
-  class="text-[#f8f8f8] bg-[#535353] rounded-xl py-2.5"
+  class="text-button-text bg-button-bg rounded-xl py-2.5"
   {disabled}
   on:click={onClick}>{label}</button
 >
