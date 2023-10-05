@@ -1,5 +1,6 @@
 <script lang="ts">
   import Input from "$lib/input.svelte";
+  import Button from "./button.svelte";
 
   let name = "";
   let email: string = "";
@@ -25,10 +26,7 @@
     <Input placeholder="Password" value={password} password />
   </div>
 
-  <button
-    class="text-white rounded-lg bg-[#131313] p-3"
-    on:click={handleRegister}>Create Account</button
-  >
+  <Button label="Create Account" onClick={handleRegister} />
 
   <div style="display:flex;flex-direction:row;align-items:center;gap:6px;">
     <p>Already have an account?</p>

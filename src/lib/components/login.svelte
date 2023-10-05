@@ -1,7 +1,9 @@
 <script lang="ts">
   import { userWritable } from "$lib/store.js";
   import { goto } from "$app/navigation";
+
   import Input from "$lib/input.svelte";
+  import Button from "./button.svelte";
 
   let name = "";
   let email = "";
@@ -34,9 +36,7 @@
     <Input placeholder="Password" value={password} password />
   </div>
 
-  <button class="text-white rounded-lg bg-[#131313] p-3" on:click={handleLogin}
-    >Login</button
-  >
+  <Button label="Login" onClick={handleLogin} />
 
   <div style="display:flex;flex-direction:row;align-items:center;gap:6px;">
     <p>Don't have an account?</p>
