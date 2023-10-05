@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { userWritable } from "$lib/store.js";
-  import { goto } from "$app/navigation";
+  // import { userWritable } from "$lib/store.js";
 
   import Input from "$lib/components/base/input.svelte";
   import Button from "$lib/components/base/button.svelte";
@@ -10,18 +9,17 @@
   let password = "";
 
   const handleNavigate = () => {
-    window.location.pathname = "/register";
+    // window.location.pathname = "/register";
   };
 
   const handleLogin = () => {
-    const payload = {
-      name,
-      email,
-      password,
-    };
+    // const payload = {
+    //   name,
+    //   email,
+    //   password,
+    // };
 
-    userWritable.set(payload);
-    goto("/");
+    // userWritable.set(payload);
   };
 </script>
 

@@ -7,12 +7,10 @@
   let password = "";
 
   const handleNavigate = () => {
-    window.location.pathname = "/login";
+    // window.location.pathname = "/login";
   };
 
-  const handleRegister = () => {
-    // Stores users in localstorage
-  };
+  const handleRegister = () => {};
 </script>
 
 <div class="flex flex-col justify-center max-w-lg gap-6">
