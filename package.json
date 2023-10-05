@@ -29,6 +29,7 @@
 		"@sveltejs/kit": "^1.20.4",
 		"@sveltejs/package": "^2.0.0",
 		"autoprefixer": "^10.4.16",
+		"classnames": "^2.3.2",
 		"postcss": "^8.4.31",
 		"publint": "^0.1.9",
 		"svelte": "^4.0.5",

@@ -3,12 +3,13 @@
   import { goto } from "$app/navigation";
   import { page } from "$app/stores";
 
-  const routeHeader = (() => {
-    const { pathname } = $page.url;
+  import NavButton from "$lib/components/base/nav-button.svelte";
 
+  let { pathname } = $page.url;
+
+  const routeHeader = (() => {
     if (pathname === "/") return "Home";
     if (pathname === "/components") return "Components";
-
     return pathname;
   })();
 
@@ -24,7 +25,7 @@
     {
       name: "Items",
       path: "/items",
-    }
+    },
   ];
 
   const handleNavigate = () => {
@@ -38,9 +39,9 @@
       <h1 class="whitespace-nowrap">Svelte Testing</h1>
     </div>
 
-    <div class="flex flex-col p-6 gap-6">
+    <div class="flex flex-col p-6 gap-3">
       {#each routes as route}
-        <a class="text-button-text" href={route.path}>{route.name}</a>
+        <NavButton label={route.name} href={route.path} enabled={true} />
       {/each}
     </div>
   </div>

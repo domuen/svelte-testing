@@ -9,7 +9,11 @@ export default {
       "secondary": "#434343",
 
       "button-bg": "#535353",
-      "button-text": "#f8f8f8"
+      "button-text": "#f8f8f8",
+
+      "nav-button-enabled-bg": "#393939",
+      "nav-button-hover-bg": "#404040",
+      "nav-button-focus-bg":"#4d4d4d"
     }
   },
   plugins: []
