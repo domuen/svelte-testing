@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Input from "$lib/input.svelte";
+
   let name = "";
   let email: string = "";
   let password = "";
@@ -18,24 +20,9 @@
   <p>Create your account</p>
 
   <div class="flex flex-col gap-3">
-    <input
-      class="text-white rounded-lg bg-[#131313] p-3"
-      type="text"
-      placeholder="Name"
-      bind:value={name}
-    />
-    <input
-      class="text-white rounded-lg bg-[#131313] p-3"
-      type="email"
-      placeholder="Email"
-      bind:value={email}
-    />
-    <input
-      class="text-white rounded-lg bg-[#131313] p-3"
-      type="password"
-      placeholder="Password"
-      bind:value={password}
-    />
+    <Input placeholder="Name" value={name} />
+    <Input placeholder="Email" value={email} />
+    <Input placeholder="Password" value={password} password />
   </div>
 
   <button
