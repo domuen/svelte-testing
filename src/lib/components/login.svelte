@@ -2,8 +2,8 @@
   import { userWritable } from "$lib/store.js";
   import { goto } from "$app/navigation";
 
-  import Input from "$lib/input.svelte";
-  import Button from "./button.svelte";
+  import Input from "$lib/components/base/input.svelte";
+  import Button from "$lib/components/base/button.svelte";
 
   let name = "";
   let email = "";
