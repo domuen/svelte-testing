@@ -4,6 +4,10 @@ export default {
   theme: {
     extend: {},
     colors: {
+      "bg": "#242424",
+      "primary": "#303030",
+      "secondary": "#434343",
+
       "button-bg": "#535353",
       "button-text": "#f8f8f8"
     }
