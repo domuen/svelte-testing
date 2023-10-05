@@ -20,7 +20,7 @@
 <div
   class={cn(
     bg,
-    "hover:bg-nav-button-hover-bg focus:bg-nav-button-focus-bg rounded-lg px-4 py-3 select-none"
+    "hover:bg-nav-button-hover-bg active:bg-nav-button-focus-bg rounded-lg px-4 py-3 select-none"
   )}
   on:click={handleNavigate}
 >
