@@ -26,11 +26,9 @@
 </script>
 
 {#each items as item}
+  <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
   <div
     class="flex flex-col items-center justify-center max-w-lg rounded border cursor-pointer p-6 m-6 gap-6 hover:scale-105 select-none duration-100"
-    role="button"
-    tabindex="0"
-    on:keypress={() => {}}
     on:click={() => handleViewItem(item.id)}
   >
     <h3>{item.name}</h3>
